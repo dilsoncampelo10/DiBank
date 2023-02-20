@@ -1,0 +1,23 @@
+{
+  "name": "dibank",
+  "version": "1.0.0",
+  "description": "Banco do dilson",
+  "main": "no",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dilsoncampelo10/DiBank.git"
+  },
+  "keywords": [
+    "bank",
+    "typescript"
+  ],
+  "author": "Dilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dilsoncampelo10/DiBank/issues"
+  },
+  "homepage": "https://github.com/dilsoncampelo10/DiBank#readme"
+}
