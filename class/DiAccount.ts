@@ -2,7 +2,7 @@ export abstract class DiAccount{
 
     private number:number;
     private name:string;
-    private balance:number;
+    protected balance:number;
     private status:boolean
 
     constructor(number:number,name:string){
@@ -27,7 +27,7 @@ export abstract class DiAccount{
         }
 
     }
-    private validateAccount = ():boolean => {
+    protected validateAccount = ():boolean => {
         
         if (this.status) {
             return this.status;
