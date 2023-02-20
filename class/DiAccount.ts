@@ -14,11 +14,17 @@ export abstract class DiAccount{
 
     deposit = (value:number) => {
         if (this.validateAccount()) {
-            this.setBalance(value);
+            this.balance += value;
         }
     }
 
     withdraw = (value:number) => {
+
+        if(this.validateAccount()){
+            if(this.checkBalance(value)){
+                this.balance -= value;
+            }
+        }
 
     }
     private validateAccount = ():boolean => {
@@ -28,6 +34,15 @@ export abstract class DiAccount{
         }
         
         throw new Error('Conta inativa');
+    }
+
+    private checkBalance = (value:number):boolean => {
+
+        if(this.balance > value){
+            return true;
+        }
+
+        throw new Error('Saldo insuficiente');
     }
 
     setNumber = (number:number) => {
