@@ -4,6 +4,7 @@
   "description": "Banco do dilson",
   "main": "no",
   "scripts": {
+    "dev": "npx ts-node main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/dilsoncampelo10/DiBank/issues"
   },
-  "homepage": "https://github.com/dilsoncampelo10/DiBank#readme"
+  "homepage": "https://github.com/dilsoncampelo10/DiBank#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
 }
