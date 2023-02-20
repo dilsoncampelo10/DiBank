@@ -1,7 +1,7 @@
 export abstract class DiAccount{
 
-    private number:number;
-    private name:string;
+    private readonly number:number;
+    private readonly name:string;
     protected balance:number;
     private status:boolean
 
@@ -45,17 +45,10 @@ export abstract class DiAccount{
         throw new Error('Saldo insuficiente');
     }
 
-    setNumber = (number:number) => {
-        this.number = number;
-    }
-
     getNumber = ():number => {
         return this.number;
     }
 
-    setName = (name:string):void => {
-        this.name = name;
-    }
     getName = ():string => {
         return this.name;
     }
