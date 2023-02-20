@@ -27,6 +27,11 @@ export abstract class DiAccount{
         }
 
     }
+
+    closeAccount(){
+        this.status = false;
+    }
+
     protected validateAccount = ():boolean => {
         
         if (this.status) {
@@ -38,7 +43,7 @@ export abstract class DiAccount{
 
     private checkBalance = (value:number):boolean => {
 
-        if(this.balance > value){
+        if(this.balance >= value){
             return true;
         }
 

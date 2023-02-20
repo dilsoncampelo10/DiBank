@@ -1,6 +1,6 @@
 import { DiAccount } from "./DiAccount";
 
-class PeopleAccount extends DiAccount {
+export class PeopleAccount extends DiAccount {
     constructor(number:number,name:string) {
         super(number,name)
     }
